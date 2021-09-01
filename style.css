@@ -10,26 +10,99 @@
   --black: #050306;
   --red: #d96431;
   --blue: #2989e7;
-  --text-color: #dddbde;
+  --text-color: #d3d1d4;
 }
 
 .main {
   width: 100vw;
   height: 100vh;
-  background: brown;
+  /* background: brown; */
 }
 
+/* Styling first section */
 .Home_section {
-  background: grey;
+  /* background: #808080; */
   height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
 }
 
+.home_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_content .content {
+  /* background: chartreuse; */
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7%;
+
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 40vh;
+}
+
+h1.stayIn {
+  font-size: 4em;
+  font-weight: 700;
+  color: var(--black);
+}
+
+p.para {
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+span.safe {
+  font-size: 50px;
+  color: var(--red);
+}
+
+.home_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_image img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* [class^="home_"] {
+  border: 2px solid black;
+} */
+
+.button {
+  display: grid;
+  width: 30%;
+  height: 60px;
+  color: white;
+  font-size: 1.135em;
+  border-radius: 50px;
+  place-items: center;
+  background: var(--blue);
+}
+
+/* Home section styling complete */
+
+/* Section section styling  */
 .stayHome__section {
   /* position: absolute; */
   background: hotpink;
   height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   position: relative;
+}
+
+[class^="stayhome_"] {
+  border: 2px solid black;
 }
 
 .skill {
