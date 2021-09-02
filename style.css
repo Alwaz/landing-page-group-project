@@ -17,12 +17,10 @@
 .main {
   width: 100vw;
   height: 100vh;
-  /* background: brown; */
 }
 
 /* Styling first section */
 .Home_section {
-  /* background: #808080; */
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -37,7 +35,6 @@
 }
 
 .home_content .content {
-  /* background: chartreuse; */
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -53,8 +50,9 @@ h1.stayIn {
   color: var(--black);
 }
 
-p.para {
+.content p.para {
   font-size: 30px;
+  margin-left: -8px;
   color: var(--text-color);
 }
 
@@ -74,9 +72,9 @@ span.safe {
   object-fit: contain;
 }
 
-[class^="home_"] {
+/* [class^="home_"] {
   border: 2px solid black;
-}
+} */
 
 .button {
   display: grid;
@@ -92,19 +90,10 @@ span.safe {
 /* Home section styling complete */
 
 /* Section section styling  */
-.stayHome__section {
-  background: hotpink;
-  height: 90vh;
-  display: grid;
-  grid-template-columns: 0.75fr 1fr;
-  position: relative;
-}
 
 .stayhome_content_section {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* background: yellow; */
 }
 
 .stayhome_image > img {
@@ -135,7 +124,6 @@ span.safe {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: yellow; */
 }
 
 .todo_content {
@@ -159,7 +147,6 @@ span.safe {
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
   margin-top: 4%;
-  /* background: blueviolet; */
 }
 
 .card {
@@ -186,7 +173,6 @@ span.safe {
 }
 
 .card_content {
-  /* background: hotpink; */
   height: 25vh;
   margin-left: 20px;
   display: flex;
@@ -206,7 +192,6 @@ span.safe {
 
 .icon {
   width: 90%;
-  /* background: chartreuse; */
   height: 10vh;
   display: flex;
   align-items: center;
@@ -223,15 +208,152 @@ span.safe {
   background: var(--text-color);
 }
 
+/* Download section styling */
 .download_section {
   position: relative;
   height: 90vh;
-  background: blue;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  background: var(--yellow);
+}
+
+.download_content {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.download_content_text .largetext {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.download_content_text img {
+  width: 40%;
+}
+
+.download_content_text .smalltext {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.download_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download_image img {
+  width: 70%;
 }
 
 footer {
   position: relative;
   bottom: 0;
   height: 20vh;
-  background: cadetblue;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo_heading {
+  margin-top: 2%;
+}
+
+.footer_list {
+  width: 100%;
+}
+
+.footer_list .active {
+  color: var(--red);
+}
+
+.footer_list > ul {
+  /* background: rgb(187, 187, 201); */
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: 500;
+}
+
+/* Section 2 styling */
+
+.stayHome__section {
+  grid-column: 1;
+  height: 90%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.bg-wht {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "n h b";
+}
+
+.image {
+  grid-area: n;
+}
+.image img {
+  margin: 50px;
+  width: 200px;
+  place-content: center;
+}
+.heading {
+  grid-area: h;
+}
+.heading h3 {
+  margin-left: -80px;
+  margin-top: 40px;
+  font-size: 1.75em;
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+  line-height: 30px;
+}
+.heading h3 span {
+  color: blueviolet;
+}
+.bullets {
+  display: grid;
+  grid-area: b;
+  grid-column: 3/5;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "num pra";
+  margin-top: 80px;
+  margin-left: -55px;
+}
+.numbers {
+  grid-area: num;
+  display: grid;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: red;
+  gap: 5px;
+}
+.para {
+  grid-area: pra;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-left: -350px;
+}
+.para ul {
+  display: grid;
+  gap: 35px;
+}
+.para ul p {
+  font-size: 20px;
 }
