@@ -5,7 +5,7 @@ assigned by instructor Sir Raheel Ahmed.
 
 ## Demo
 
-https://www.loom.com/share/8fb1f738e1f948e48199c39157f7db8e
+https://devnationworld.slack.com/files/U026FU3D0AW/F02DY1KU1T2/image_from_ios.mov
 
 ## Technologies Used
 
